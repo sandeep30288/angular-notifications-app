@@ -1,0 +1,85 @@
+{
+  "name": "angular2-notifications",
+  "typings": "./dist/index.d.ts",
+  "version": "3.0.0",
+  "scripts": {
+    "build": "ng build",
+    "docs": "npm run docs:build",
+    "docs:build": "compodoc -p tsconfig.json -n angular2-notifications -d docs --hideGenerator",
+    "docs:serve": "npm run docs:build -- -s",
+    "docs:watch": "npm run docs:build -- -s -w",
+    "lint": "tslint -c tslint.json --project ./tsconfig.json -t verbose",
+    "publish_lib": "npm publish dist/angular2-notifications",
+    "test": "npm run lint && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/repo"
+  },
+  "author": {
+    "name": "Filip Lauc",
+    "email": "filip.lauc93@gmail.com"
+  },
+  "keywords": [
+    "Angular",
+    "Angular 2",
+    "Library",
+    "Notifications",
+    "Notification",
+    "Toast"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/username/repo/issues"
+  },
+  "homepage": "https://github.com/flauc/angular2-notifications",
+  "peerDependencies": {
+    "@angular/animations": "^8.0.0",
+    "@angular/common": "^8.0.0",
+    "@angular/core": "^8.0.0",
+    "rxjs": "^6.4.0",
+    "zone.js": "^0.9.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.803.14",
+    "@angular-devkit/build-ng-packagr": "~0.803.14",
+    "@angular/animations": "~8.2.11",
+    "@angular/cli": "~8.2.2",
+    "@angular/common": "~8.2.11",
+    "@angular/compiler": "~8.2.11",
+    "@angular/compiler-cli": "~8.2.11",
+    "@angular/core": "~8.2.11",
+    "@angular/platform-browser": "~8.2.11",
+    "@angular/platform-browser-dynamic": "~8.2.11",
+    "@compodoc/compodoc": "^1.1.7",
+    "@types/jasmine": "~3.3.8",
+    "@types/node": "~8.9.4",
+    "angular-in-memory-web-api": "^0.6.1",
+    "codelyzer": "^5.0.0",
+    "core-js": "^2.5.4",
+    "del": "^3.0.0",
+    "jasmine-core": "~3.4.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "ng-packagr": "^4.2.0",
+    "node-watch": "0.5.2",
+    "protractor": "~5.4.0",
+    "rollup": "^0.66.6",
+    "run-sequence": "^2.2.1",
+    "rxjs": "~6.4.0",
+    "ts-node": "~7.0.0",
+    "tsickle": "^0.33.0",
+    "tslib": "^1.10.0",
+    "tslint": "~5.15.0",
+    "typescript": "~3.5.3",
+    "zone.js": "~0.9.1"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
